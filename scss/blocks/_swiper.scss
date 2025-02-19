@@ -8,23 +8,31 @@
 }
 
 .car-pagination {
-	.swiper-horizontal > .swiper-pagination-bullets,
-	.swiper-pagination-bullets.swiper-pagination-horizontal,
-	.swiper-pagination-custom,
-	.swiper-pagination-fraction {
-		position: absolute;
-		top: -50%;
-		left: 10%;
-		display: inline-block;
-		height: auto;
-		bottom: unset;
-		width: auto;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: 20px;
-	}
+	position: absolute;
+	top: -50% !important;
+	left: 11% !important;
+	display: inline-block;
+	height: auto;
+	bottom: unset;
+	width: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	z-index: 9;
+	max-width: 50px;
 }
+// .car-pagination {
+// 	display: flex;
+// 	z-index: 9;
+// 	flex-direction: column;
+// 	position: absolute;
+// 	top: -190px;
+// 	gap: 20px;
+// 	align-items: center;
+// 	max-width: 50px;
+// 	left: 170px;
+// }
 .swiper-pagination-bullet {
 	width: 10px;
 	height: 10px;
@@ -59,15 +67,15 @@
 .catalog-car-pagination {
 	position: absolute;
 	display: flex;
-  z-index: 9;
+	z-index: 9;
 	.swiper-pagination-bullet {
 		border-radius: 5px;
 		width: 60px;
 		height: 5px;
 		background: #fff;
-    color: #fff;
+		color: #fff;
 	}
-  .swiper-pagination-bullet-active {
-    border: none;
-  }
+	.swiper-pagination-bullet-active {
+		border: none;
+	}
 }

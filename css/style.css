@@ -535,13 +535,10 @@ body {
   z-index: 8;
 }
 
-.car-pagination .swiper-horizontal > .swiper-pagination-bullets,
-.car-pagination .swiper-pagination-bullets.swiper-pagination-horizontal,
-.car-pagination .swiper-pagination-custom,
-.car-pagination .swiper-pagination-fraction {
+.car-pagination {
   position: absolute;
-  top: -50%;
-  left: 10%;
+  top: -50% !important;
+  left: 11% !important;
   display: inline-block;
   height: auto;
   bottom: unset;
@@ -550,6 +547,8 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  z-index: 9;
+  max-width: 50px;
 }
 
 .swiper-pagination-bullet {
