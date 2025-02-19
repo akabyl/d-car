@@ -1,0 +1,175 @@
+.main-block {
+	background: #a0adb3;
+	min-height: 780px;
+	padding-top: 170px;
+	position: relative;
+	z-index: 2;
+	&__inner {
+		max-width: 1110px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		gap: 10px;
+		position: relative;
+		border-bottom: 1px solid #4b6b7a;
+		padding-bottom: 30px;
+	}
+	&__title {
+		font-size: 48px;
+		font-weight: 300;
+		line-height: 1.1;
+		text-transform: uppercase;
+		color: #192a31;
+		max-width: 518px;
+		span {
+			color: #0c1f28;
+			font-weight: 700;
+		}
+	}
+	&__descriptions {
+		max-width: 510px;
+		display: flex;
+		flex-direction: column;
+		gap: 25px;
+	}
+	&__text {
+		font-weight: 300;
+		font-size: 22px;
+		line-height: 1.1;
+		color: #192a31;
+	}
+}
+.line-vertical {
+	position: absolute;
+	width: 100%;
+	background-color: #4b6b7a;
+	height: 2px;
+	top: 320px;
+}
+.line-horizontal {
+	width: 2px;
+	height: 100%;
+	position: absolute;
+	background-color: #4b6b7a;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 0;
+}
+
+.display {
+	color: #fff;
+	position: relative;
+	width: 100%;
+	&__car {
+		.car-image {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			z-index: 8;
+			max-width: 1500px;
+			max-height: 714px;
+			width: 100%;
+			height: auto;
+			object-fit: cover;
+		}
+		.car-gelik {
+			top: -427px;
+		}
+		.car-bmw {
+			top: -487px;
+		}
+		.car-rover {
+			top: -467px;
+		}
+		.car-lexux {
+			top: -320px;
+		}
+		.car-porsche {
+			top: -290px;
+			max-width: 1696px;
+		}
+	}
+	&__model {
+		font-family: var(--font-second);
+		font-weight: 600;
+		font-size: 220px;
+		line-height: 1.1;
+		text-transform: uppercase;
+		position: absolute;
+		top: -100%;
+		left: 50%;
+		transform: translateX(-50%);
+		opacity: 0.2;
+		color: transparent;
+		-webkit-text-stroke: 2px #192a31;
+		z-index: 8;
+		text-wrap: nowrap;
+		/* Для поддержки в Safari */
+		text-stroke: 2px #192a31;
+	}
+	&__footer {
+		display: flex;
+		justify-content: center;
+		min-height: 470px;
+	}
+	&__content {
+		max-width: 1200px;
+		padding-top: 187px;
+	}
+	&__left {
+		background: #091920;
+		width: 100%;
+		.display__content {
+			max-width: 700px;
+			margin-left: auto;
+		}
+	}
+	&__inner {
+	}
+	&__title {
+		font-size: 48px;
+		font-weight: 700;
+		line-height: 1.1;
+		letter-spacing: 0.01em;
+		text-transform: uppercase;
+		margin-bottom: 30px;
+	}
+	&__subtitle {
+		font-size: 32px;
+		font-weight: 400;
+		line-height: 1.1;
+		letter-spacing: 0.01em;
+		color: #fff;
+	}
+	&__right {
+		background: #0c1f28;
+		width: 100%;
+		.display__content {
+			max-width: 597px;
+			padding-left: 60px;
+		}
+		.btn {
+			margin-left: auto;
+		}
+	}
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		max-width: 597px;
+		row-gap: 30px;
+		margin-bottom: 72px;
+	}
+	&__item {
+		max-width: 257px;
+		width: 100%;
+		p {
+			font-weight: 300;
+			font-size: 24px;
+			line-height: 96%;
+		}
+	}
+	// &__info {
+	// }
+	// &__text {
+	// }
+}

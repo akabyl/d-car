@@ -1,0 +1,31 @@
+/* Base */
+@import './base/reset';
+@import './base/fonts';
+@import './base/vars';
+@import './base/base';
+@import './base/utils';
+@import './base/containers';
+@import './base/sticky-footer';
+
+/* Blocks */
+@import './blocks/header';
+@import './blocks/btns';
+@import './blocks/main-block';
+@import './blocks/swiper';
+@import './blocks/brands';
+@import './blocks/info';
+@import './blocks/banner';
+@import './blocks/service';
+@import './blocks/comprehensive';
+@import './blocks/form';
+@import './blocks/catalog-top';
+@import './blocks/breadcrumbs';
+@import './blocks/filters';
+@import './blocks/catalog';
+@import './blocks/card';
+@import './blocks/services-page';
+@import './blocks/contact';
+@import './blocks/about';
+@import './blocks/footer';
+
+

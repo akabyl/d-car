@@ -1,0 +1,25 @@
+.breadcrumbs {
+	padding: 40px 0 62px;
+	.container {
+		display: flex;
+		align-items: center;
+		gap: 90px;
+	}
+	&__page {
+		font-weight: 400;
+		font-size: 22px;
+		color: #fff;
+	}
+}
+
+.breadcrumbs-contact {
+	.breadcrumbs__page {
+		color: #091920;
+	}
+	.btn-border {
+		max-width: 160px;
+		display: flex;
+		align-items: center;
+		gap: 15px;
+	}
+}

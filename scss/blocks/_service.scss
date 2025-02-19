@@ -1,0 +1,50 @@
+.service {
+	display: flex;
+	&__content {
+		max-width: 50%;
+		width: 100%;
+		background-color: #235d77;
+		padding-right: 40px;
+		padding-top: 80px;
+	}
+	&__list {
+		max-width: 640px;
+		margin-left: auto;
+		display: flex;
+		flex-direction: column;
+		gap: 80px;
+	}
+	&__item {
+		display: flex;
+		justify-content: space-between;
+		.btn-border {
+			max-width: 220px;
+			background-size: 220px;
+			background-image: url('./../assets/img/btn-bg-mini.png');
+		}
+	}
+	&__left {
+	}
+	&__title {
+		margin-bottom: 20px;
+	}
+	&__text {
+		font-size: 20px;
+		max-width: 345px;
+		text-wrap: balance;
+	}
+	&__link {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+	}
+	&__img {
+		max-width: 50%;
+		width: 100%;
+		img {
+			width: 100%;
+			max-height: 800px;
+			object-fit: cover;
+		}
+	}
+}

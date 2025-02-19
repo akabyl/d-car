@@ -1,0 +1,70 @@
+.catalog {
+	background-color: #fff;
+	padding: 70px 0 60px;
+	&__row {
+	}
+	&__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 25px;
+	}
+	&__item {
+	}
+}
+.catalog-car {
+	max-width: 450px;
+	box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
+	&__img {
+		max-width: 450px;
+		max-height: 340px;
+		overflow: hidden;
+    img {
+      object-fit: cover;
+      min-height: 340px;
+    }
+	}
+	&__info {
+		padding: 33px 20px 23px;
+	}
+	&__title {
+		font-weight: 700;
+		font-size: 32px;
+		line-height: 1.1;
+		letter-spacing: 0.01em;
+		text-transform: uppercase;
+		color: #091920;
+		margin-bottom: 10px;
+	}
+	&__text {
+		font-weight: 400;
+		font-size: 26px;
+		line-height: 1.1;
+		letter-spacing: 0.01em;
+		color: #091920;
+		margin-bottom: 30px;
+	}
+	&__footer {
+		display: flex;
+		justify-content: space-between;
+    align-items: end;
+	}
+	&__year {
+	}
+	&__h3 {
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 96%;
+		color: rgba(9, 25, 32, 0.6);
+		margin-bottom: 10px;
+	}
+	&__p {
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 96%;
+		color: #091920;
+	}
+	&__price {
+	}
+	&__link {
+	}
+}

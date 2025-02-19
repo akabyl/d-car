@@ -1,0 +1,45 @@
+.btn {
+	font-family: var(--font-family);
+	font-weight: 700;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #091920;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+}
+.btn-border {
+  border: 1.5px solid #091920;
+  padding: 15px 0;
+  max-width: 260px;
+  width: 100%;
+  max-height: 50px;
+}
+
+.btn-light {
+  color: #fff;
+  background-image: url('./../assets/img/btn-bg.png');
+  background-repeat: no-repeat;
+  border: none;
+  outline: none;
+}
+
+.btn-light-mini {
+  background-image: url('./../assets/img/btn-bg-mini-catalog.png');
+  max-width: 160px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.btn-big {
+  background-image: url('./../assets/img/btn-bg-big.png');
+  max-width: 300px;
+  padding: 10px 0;
+}
+
+.header__btn > img, .header__btn > svg {
+  position: relative;
+  top: -5px;
+}

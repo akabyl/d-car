@@ -1,0 +1,101 @@
+.catalog-filter {
+	padding-bottom: 35px;
+	&__row {
+	}
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 10px;
+		margin-bottom: 40px;
+	}
+	&__title {
+		font-weight: 700;
+		font-size: 40px;
+		line-height: 1.1;
+		text-transform: uppercase;
+		color: #fff;
+	}
+	&__text {
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 110%;
+		text-transform: uppercase;
+		color: #fff;
+	}
+	&__bottom {
+	}
+}
+
+.filters {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	&__btn {
+	}
+}
+.filter {
+	position: relative;
+	max-width: 250px;
+	width: 100%;
+	&__item {
+		border: 1px solid rgba(255, 255, 255, 0.6);
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 10px 15px 10px;
+		cursor: pointer;
+	}
+	&__sublist {
+		display: none;
+		position: absolute;
+		background-color: #091920;
+		width: 100%;
+		padding: 0 10px;
+		border: 1px solid rgba(255, 255, 255, 0.6);
+		border-top: none;
+		max-height: 684px;
+		overflow-y: auto;
+		z-index: 10;
+		&.active {
+			display: block;
+		}
+
+		/* Стилизация скроллбара */
+		&::-webkit-scrollbar {
+			width: 14px; /* Ширина скроллбара */
+		}
+
+		&::-webkit-scrollbar-track {
+			background: #091920; /* Фон дорожки */
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background: #fff; /* Цвет ползунка */
+			width: 14px;
+			height: 43px;
+			max-width: 43px;
+		}
+
+		/* Стили для стрелок скролла */
+		&::-webkit-scrollbar-button {
+			background: #fff;
+		}
+
+		&::-webkit-scrollbar-button:single-button:vertical:decrement {
+			background: url('data:image/svg+xml;charset=UTF-8,<svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"><path d="M5 2 L2 6 H8 Z" fill="white"/></svg>')
+				no-repeat center;
+			background-size: contain;
+		}
+
+		&::-webkit-scrollbar-button:single-button:vertical:increment {
+			background: url('data:image/svg+xml;charset=UTF-8,<svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"><path d="M5 8 L2 4 H8 Z" fill="white"/></svg>')
+				no-repeat center;
+			background-size: contain;
+		}
+	}
+	&__subitem {
+		padding: 11px 0;
+		cursor: pointer;
+	}
+}

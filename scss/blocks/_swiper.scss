@@ -1,0 +1,73 @@
+.swiper {
+	z-index: 8;
+	overflow-x: visible !important;
+	overflow-y: visible !important;
+}
+.swiper-wrapper {
+	z-index: 8;
+}
+
+.car-pagination {
+	.swiper-horizontal > .swiper-pagination-bullets,
+	.swiper-pagination-bullets.swiper-pagination-horizontal,
+	.swiper-pagination-custom,
+	.swiper-pagination-fraction {
+		position: absolute;
+		top: -50%;
+		left: 10%;
+		display: inline-block;
+		height: auto;
+		bottom: unset;
+		width: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+	}
+}
+.swiper-pagination-bullet {
+	width: 10px;
+	height: 10px;
+	background: #0c1f28;
+	opacity: 1;
+}
+.swiper-pagination-bullet-active {
+	width: 20px;
+	height: 20px;
+	background: transparent;
+	border: 1px solid #0c1f28;
+	border-radius: 50%;
+}
+
+.brands__item.swiper-slide {
+	width: max-content;
+}
+
+.swiper-custom-btn {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+	margin-top: 40px;
+}
+.swiper-custom-btn-catalog {
+	justify-content: end;
+}
+
+.catalog-car-swiper {
+}
+
+.catalog-car-pagination {
+	position: absolute;
+	display: flex;
+  z-index: 9;
+	.swiper-pagination-bullet {
+		border-radius: 5px;
+		width: 60px;
+		height: 5px;
+		background: #fff;
+    color: #fff;
+	}
+  .swiper-pagination-bullet-active {
+    border: none;
+  }
+}
