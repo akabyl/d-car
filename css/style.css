@@ -1508,7 +1508,7 @@ body {
   color: #fff;
   max-width: 330px;
   width: 100%;
-  background-image: url("./../../assets/img/serv-cars/serv-btn.png");
+  background-image: url("./../assets/img/serv-cars/serv-btn.png");
   background-repeat: no-repeat;
   padding: 15px 0;
 }
